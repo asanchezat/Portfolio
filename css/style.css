@@ -294,3 +294,7 @@ h3 span:after {
     gap: 2.5rem;
     margin-top: 5rem;
 }
+
+.text {
+    margin-top: 10px;
+}
