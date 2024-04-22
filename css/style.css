@@ -260,3 +260,37 @@ h3 span:after {
     line-height: 1.8;
     margin-bottom: 4rem;
 }
+
+
+/*------- EXPERIENCIA SECTION -----*/ 
+
+.experiencia {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background.png);
+
+}
+
+.main-text{
+    text-align: center;
+}
+
+.main-text p {
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.main-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.experiencia-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
