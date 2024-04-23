@@ -125,35 +125,35 @@ section {
 }
 
 .home-text h3 {
-    color: var(--text-color);
-    margin: 0 0 35px; 
-    font-size: 3rem; 
-    font-weight: 700;
-    line-height: 1.1;
+    color: var(--text-color);/*color de texto*/
+    margin: 0 0 35px; /* margen de 0px arriba , 0 de izquierda y derecha y 35px abajo*/
+    font-size: 3rem; /*tamaño de fuente*/
+    font-weight: 700; /*lo ponemos en negrita*/
+    line-height: 1.1; /*espacio vertical entre las líneas de texto*/
 
 }
 
 .button {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    display: inline-block; /*elemento como bloque en línea*/
+    align-items: center; /*alineado verticalmente*/
+    justify-content: center; /*alineado horizontalmente*/
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.btn:hover { /*al pasar el ratón por encima*/
+    transform: scale(1.1); /*lo hacemos un poco más grande*/
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px; 
-    background: var(--main-color);
-    border-radius: 5px; 
-    color: var(--text-color);
-    font-size: 1rem; 
-    letter-spacing: 1px; 
-    font-weight: 500;
-    transition: all .45s ease;
-    margin-top: 30%;
+    display: inline-block;/*elemento como bloque en línea*/
+    padding: 12px; /*relleno del elemento*/
+    background: var(--main-color); /*color de fondo*/
+    border-radius: 5px;  /*lo hacemos algo redondo*/
+    color: var(--text-color); /*color de texto*/
+    font-size: 1rem; /*tamaño de fuente*/
+    letter-spacing: 1px; /*espaciado de letras pequeño*/
+    font-weight: 500; /*lo ponemos en negrita*/
+    transition: all .45s ease; /*transición suave para cuando hagamos el hover*/
+    margin-top: 30%; /*margen superior de 30%*/
 }
 
 /* ANIMACIÓN PARA EL TEXTO------------------------*/ 
