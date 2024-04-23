@@ -2,16 +2,16 @@
 url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    padding: 0;
-    margin: 0; 
-    box-sizing: border-box;
-    text-decoration:none;
-    scroll-behavior: smooth;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
+    padding: 0; /*Sin espacio de relleno dentro de los elementos*/
+    margin: 0;  /*sin margen alrededor de los elementos*/
+    box-sizing: border-box; /*modelo de caja de css*/
+    text-decoration:none; /*sin subrayados, ni nada*/
+    scroll-behavior: smooth; /*desplazamiento suave al hacer scroll*/
+    list-style: none; /*eliminamos marcadores o viñetas de las listas*/
+    font-family: 'Poppins', sans-serif; /*añadimos la fuente importada anteriormente en el  @import*/ 
 }
 
-:root {
+:root { /*establecemos colores y tamaños de tipografía específicos para toda la aplicación*/ 
     --bg-color: #2a2a2a;
     --second-bg-color: #202020;
     --text-color: #fff;
@@ -23,91 +23,89 @@ url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,30
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-color); /*color de fondo*/
+    color: var(--text-color); /*color del texto */
 }
 
 /* --------------------------- HOME Y HEADER ---------------------------------*/ 
 header {
-    position: fixed;
-    width: 100%; 
-    top: 0; 
-    right: 0;
-    z-index: 1000;
-    display: flex; 
-    align-items: center ;
-    justify-content: center; 
-    background: transparent;
-    padding: 22px 15%; 
-    border-bottom: 1px solid transparent; 
-    transition: all .45s ease;
+    position: fixed; /*fijamos el encabezado, para que no se mueva*/
+    width: 100%; /*que ocupe todo el año de la pantalla*/
+    top: 0; /*lo ponemos en la parte superior de la pantalla*/
+    right: 0; /*en la esquina derecha */
+    z-index: 1000; /*para la profundidad, está por encima de todos los elementos que haya*/
+    display: flex;  /*alineamos todos los elementos en una fila*/
+    align-items: center ; /*se alinean verticalmente*/
+    justify-content: center;  /*se alinean horizontalmente*/
+    background: transparent; /*sin fondo*/
+    padding: 22px 15%;  /*espacio de relleno de los elementos del header*/
+    border-bottom: 1px solid transparent;  /*borde inferior transparente*/
+    transition: all .45s ease; /*transición suave, esto es para cuando hagamos el hover quede más bonito*/
 }
 
 .logo {
-    color: var(--text-color);
-    font-size: 35px; 
-    font-weight: 700; 
-    letter-spacing: 1px;
+    color: var(--text-color); /*color de texto*/
+    font-size: 35px;  /*tamaño de la fuente*/
+    font-weight: 700; /*lo ponemos muy grueso, en negrita*/
+    letter-spacing: 1px; /*espaciado entre letras*/
 }
 
 span {
-    color: var(--main-color);
+    color: var(--main-color); /*color de texto*/
 }
 
 .navlist {
-    display: flex;  
+    display: flex;  /*alineamos todos los elementos en una fila*/
 }
 
 .navlist a {
-    color: var(--second-color);
-    font-size: 17px; 
-    font-weight: 500;
-    margin: 0 25px; 
-    transition: all .45s ease; 
+    color: var(--second-color);/*color de texto*/
+    font-size: 17px; /*tamaño de la fuente*/
+    font-weight: 500;/*lo ponemosen negrita*/
+    margin: 0 25px;  /*margen izq y dch 0, arriba y abajo 25px*/
+    transition: all .45s ease; /*transición suave, esto es para cuando hagamos el hover quede más bonito*/
 }
 
-.navlist a:hover{
-    color: var(--main-color);
+.navlist a:hover{ /*al pasar el ratón por encima*/
+    color: var(--main-color);/*color de texto*/
 }
 
-.navlist a.active {
-    color: var(--main-color);
+.navlist a.active { /*cuando tenga la clase="active"*/
+    color: var(--main-color);/*color de texto*/
 }
 
 #menu-icon {
-    font-size: 35px; 
-    color: var(--text-color);
-    z-index: 1000;
-    cursor: pointer; 
-    margin-left: 24px; 
-    display: none;
+    font-size: 35px; /*tamaño de la fuente*/
+    color: var(--text-color);/*color de texto*/
+    z-index: 1000;/*para la profundidad, está por encima de todos los elementos que haya*/
+    cursor: pointer; /*el tipo de cursor al pasar por encima*/
+    margin-left: 24px;  /*margen derecho de 24px*/
+    display: none; /*ocultamos el elemento*/
 }
 
 section {
-    padding: 160px 15% 120px; 
+    padding: 160px 15% 120px; /* Espaciado de 160px arriba , 15% del ancho de relleno izquierdo y derecho y 120px abajo*/
 }
 
 .home {
-    position:relative; 
-    height: 100vh; 
-    width: 100%; 
-    background-image: url(../img/background.png);
-    background-size: cover;
-    background-position: center; 
-    display: flex; 
-    align-items: center; 
-    justify-content: flex-start;
+    position:relative; /*posición con respecto a su posición normal, es decir, para poder cambiar su posición*/
+    height: 100vh; /*que ocupe toda la altura de la pantalla*/
+    width: 100%; /*todo el ancho de la pantalla*/
+    background-image: url(../img/background.png); /*imagen de fondo para toda la página principal*/
+    background-size: cover; /*para que la imagen ocupe todo el área de la pantalla*/
+    background-position: center; /*lo centramos*/
+    display: flex; /*contenedor flexible, para que se adapten bien los elementos*/
+    align-items: center;  /*los alineamos verticalmente*/
+    justify-content: flex-start; /*los ponemos al inicio, para que estén a la izq*/
 }
 
 .slide {
-    display: flex;
-	width: 300px;
-	height: 40px;
-	color: #fff;
-	font-size: 40px;
-	line-height: 40px;
-	
-	position: fixed;
+    display: flex;/*contenedor flexible, para que se adapten bien los elementos*/
+	width: 300px; /*ancho del contenedor*/
+	height: 40px; /*añto del contenedor*/
+	color: #fff; /*color de texto*/
+	font-size: 40px; /*tamaño de la letra*/
+	line-height: 40px;	/*espacio vertical entre las líneas de texto*/
     margin: 0 0 20px;
     bottom: 65%; 
     overflow: hidden;
