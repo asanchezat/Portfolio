@@ -61,7 +61,7 @@ span {
 .navlist a {
     color: var(--second-color);/*color de texto*/
     font-size: 17px; /*tamaño de la fuente*/
-    font-weight: 500;/*lo ponemosen negrita*/
+    font-weight: 500;/*lo ponemos en negrita*/
     margin: 0 25px;  /*margen izq y dch 0, arriba y abajo 25px*/
     transition: all .45s ease; /*transición suave, esto es para cuando hagamos el hover quede más bonito*/
 }
@@ -106,22 +106,22 @@ section {
 	color: #fff; /*color de texto*/
 	font-size: 40px; /*tamaño de la letra*/
 	line-height: 40px;	/*espacio vertical entre las líneas de texto*/
-    margin: 0 0 20px;
-    bottom: 65%; 
-    overflow: hidden;
+  margin: 0 0 20px; /* margen de 0px arriba , 0 de izquierda y derecha y 20px abajo*/
+  bottom: 65%; /*posicionamos el contenedor un 65% desde la parte inferior de la pantalla*/
+  overflow: hidden; /*controlamos que no se desborde el contenido de la página, y si es así lo ocultamos*/
 }
 
 .one {
-    color: white; 
+    color: white; /*color de texto*/
 }
 
 
 .home-text h1 {
-    font-size: var(--big-font);
-    font-weight: 700;
-    color:var(--text-color);
-    line-height: 1.1;
-    margin: 0 0 8px;
+    font-size: var(--big-font);/*tamaño de la letra*/
+    font-weight: 700;/*lo ponemos en negrita*/
+    color:var(--text-color); /*color de texto*/
+    line-height: 1.1;/*espacio vertical entre las líneas de texto*/
+    margin: 0 0 8px;/* margen de 0px arriba , 0 de izquierda y derecha y 8px abajo*/
 }
 
 .home-text h3 {
